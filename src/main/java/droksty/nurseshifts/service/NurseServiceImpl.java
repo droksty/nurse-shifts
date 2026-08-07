@@ -38,7 +38,9 @@ public class NurseServiceImpl implements NurseService {
 
     @Override
     public void delete(Long id) {
-        repository.deleteById(id);
+        Nurse nurse = repository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Nurse not found with ID: " + id));
+        repository.delete(nurse);
     }
 
     @Override
