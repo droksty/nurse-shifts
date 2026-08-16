@@ -7,6 +7,9 @@
 - Manage nurse profiles and shift assignments.
 - RESTful API endpoints for CRUD operations.
 - Integration with an H2 in-memory database for development and testing.
+- Frontend for user interaction.
+
+**Note**: Frontend is tailored to the Health Center of Milos island, Greece, and is localized in Greek.
 
 ## Getting Started
 
@@ -34,6 +37,10 @@ To start the application, run:
 ./mvnw spring-boot:run
 ```
 The application will be accessible at `http://localhost:8080`.
+
+### Frontend Integration
+The Angular frontend is pre-built and included in the `src/main/resources/static` directory.
+It serves as the user interface for the application.
 
 ## Project Structure
 
